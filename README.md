@@ -27,7 +27,7 @@ This plugin will add the `couch` namespace in your Fastify instance which you ca
 
 **Example**:
 ```js
-const fastify = require('fastify')
+const fastify = require('fastify')()
 
 fastify.register(require('fastify-couchdb'), {
   url: 'http://localhost:5984'
@@ -44,7 +44,7 @@ fastify.get('/rabbit', (req, reply) => {
 
 Async await is support as well if you prefer:
 ```js
-const fastify = require('fastify')
+const fastify = require('fastify')()
 
 fastify.register(require('fastify-couchdb'), {
   url: 'http://localhost:5984'
